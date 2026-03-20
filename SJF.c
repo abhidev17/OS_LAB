@@ -26,9 +26,17 @@ int main()
         {
             if(bt[i]>bt[j])
             {
-                temp=bt[i]; bt[i]=bt[j]; bt[j]=temp;
-                temp=at[i]; at[i]=at[j]; at[j]=temp;
-                temp=p[i]; p[i]=p[j]; p[j]=temp;
+                temp=bt[i];
+                 bt[i]=bt[j];
+                  bt[j]=temp;
+
+                temp=at[i];
+                 at[i]=at[j];
+                  at[j]=temp;
+
+                temp=p[i];
+                 p[i]=p[j];
+                  p[j]=temp;
             }
         }
     }
@@ -50,6 +58,19 @@ int main()
     for(i=0;i<n;i++)
         printf("P%d\t%d\t%d\t%d\t%d\t%d\n",p[i],at[i],bt[i],ct[i],wt[i],tat[i]);
 
+
+         float avgwt=0,avgtat=0;
+
+    for(i=0;i<n;i++)
+    {
+        avgwt+=wt[i];
+        avgtat+=tat[i];
+    }
+
+    printf("\nAverage WT = %.2f",avgwt/n);
+    printf("\nAverage TAT = %.2f\n",avgtat/n);
+
+
     printf("\n---------GANTT CHART---------\n");
 
      for(i=0;i<n;i++)
@@ -59,5 +80,5 @@ int main()
     printf("0 ");
     for(i=0;i<n;i++)
         printf("   %d   ",ct[i]);
-
+ 
 } 
