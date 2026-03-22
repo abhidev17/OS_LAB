@@ -72,7 +72,7 @@ int main()
 
     time = 0;
     remain = n;
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n; i++) 
         rt[i] = bt[i];
 
     while(remain != 0)

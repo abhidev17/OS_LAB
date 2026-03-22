@@ -17,7 +17,7 @@ int signal(int s)
     return (++s);
 }
 
-void producer()
+void producer() 
 {
     mutex = wait(mutex);
 
