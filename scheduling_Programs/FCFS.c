@@ -16,7 +16,7 @@ int main()
 
         printf("Process %d Burst Time: ",i+1);
         scanf("%d",&bt[i]);
-    }
+      }
 
     for(i=0;i<n;i++)
     {

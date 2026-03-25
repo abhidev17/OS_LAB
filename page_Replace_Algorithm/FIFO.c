@@ -41,7 +41,7 @@ int main() {
         printf("\n");
         for(k = 0; k < frames; k++)
             printf("%d\t", frame[k]);
-    }
+       }
 
     printf("\n\nTotal Page Faults = %d", fault);
     printf("\nTotal Page Hits = %d\n", hit);
